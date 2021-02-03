@@ -1,0 +1,11 @@
+/* CSS Document */
+.head {
+/*  background: rgba(219,68,55,255);*/
+	width: auto;
+	height: auto;
+}
+.head_title {
+  float: left;
+  padding: 15px;
+	line-height: 30px;
+}
