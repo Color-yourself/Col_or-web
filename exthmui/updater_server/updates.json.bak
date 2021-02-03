@@ -1,0 +1,32 @@
+{
+  "response": [
+    {
+      //exTHmUI版本
+      "version_name": "exTHmUI 10", 
+      //android 版本
+      "android_version": "10",
+      //机型（代号），可能会废除此条信息
+      "device": "h930", 
+      //强制升级？
+      "requirement": 1, 
+      //安装包类型，full：全量包
+      "package_type": "full",
+      //更新日志，用base64加密，可能会用网页链接替代
+      "change_log": "VGVzdFVwZGF0ZQ==", 
+      //时间戳
+      "timestamp": 1619663901, 
+      //文件名，尽量根据链接给定的文件名
+      "file_name": "exthm-ota-judyln.zip", 
+      //SHA-1
+      "sha1": "0ee197f07f3741e835407fe4088b3bafa3267649", 
+      //ROM类型
+      "rom_type": "SNAPSHOT", 
+      //ROM大小，尽量精确到B
+      "size": 768785684, 
+      //ROM链接
+      "url" :"https://coloroswebsitefs.coloros.com/coloroswebsite-coloros-com/grs_20200825093256/PDYM20_11_OTA_0070_all_MkcZ3qgWHEka.ozip", 
+      //维护者
+      "maintainer": "Col_or"
+	}
+  ]
+}
