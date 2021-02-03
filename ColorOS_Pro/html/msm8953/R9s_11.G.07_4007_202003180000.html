@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh" style="font-size: 50px;">
+
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport" />
+	<title>OTA</title>
+
+<style type="text/css">
+		body,
+		h1,
+		h3,
+		h2,
+		p,
+		h4 {
+			margin: 0;
+			padding: 0;
+			background: #ffffff;
+			font-family: "HelveticaNeue,Helvetica,Arial,sans-serif;";
+			font-weight: normal;
+		}
+
+		.title {
+			color: #000000;
+			font-size: 0.28rem;
+			line-height: 0.64rem;
+			padding-top: 0.56rem;
+			font-family: "HelveticaNeue,Helvetica,Arial,sans-serif;";
+			font-weight: bolder;
+		}
+
+		#title2 {
+			padding-top: 0.52rem !important;
+		}
+
+        #right {
+        text-align: right;
+        }
+
+		.contentClass {
+			padding-top: 0.02rem;
+			color: #989A9B;
+			font-size: 0.24rem;
+			word-wrap: break-word;
+			line-height: 0.34rem;
+			font-family: "HelveticaNeue,Helvetica,Arial,sans-serif;";
+			font-weight: normal;
+		}
+
+		.moreClass {
+			color: #1494e3;
+			font-size: 0.2rem;
+			line-height: 0.26rem;
+			word-wrap: break-word;
+			margin-bottom: 0.02rem;
+		}
+
+		a:link,
+		a:visited,
+		a:hover,
+		a:hover {
+			color: #1494e3;
+		}
+
+		#more {
+			color: #000000;
+		}
+
+		.content {
+			margin-left: 0.7rem;
+			margin-right: 0.7rem;
+		}
+
+		.moreP {
+			padding: 0.64rem 0;
+		}
+		
+		.warningClass {
+            padding-top: 5px;
+            color: #ff0000;
+            font-size: 13px;
+            font-family: "HelveticaNeue,Helvetica,Arial,sans-serif;";
+            font-weight: normal;
+        }
+
+        #warning {
+	        color: #ff0000;
+        }
+</style>
+  </head>
+  <body style="font-size: 18px;">
+
+	<div class="content" id="content">
+	  <div>&nbsp;</div>
+	  <p id="title1" class="title">前言</p>
+	  <div id="content1" class="contentClass">&nbsp; &nbsp; &nbsp; &nbsp;欢迎使用ColorOS 5.2.1 Pro，感谢大家的一路陪伴，感谢大家给予的支持！如果喜欢我的作品，可以给我打赏哦，也可以帮忙激活内置的推广软件，然后多用几天哦～谢谢大家！
+		<div>&nbsp;</div>
+		<div id="right">KarAWM</div>
+		<div id="right">2020年01月15日</div></div>
+	  <span id="content1" class="contentClass">
+		<!--<p id="title1" class="title">回顾公测历程：</p>
+		<div>——2016年10月7日：A33正式宣布ColorOS3.0移植成功</div>
+		<div>——2016年10月23日：A33首个ColorOS3.0正式发布</div>
+		<div>——2016年12月16日：A53 ColorOS3.0移植成功并发布</div>
+		<div>——2017年5月20日：A33、A53 ColorOS3.0 极致精简优化版开始研发</div>
+		<div>——2017年6月8日：A33、A53 首个付费版ColorOS3.0 极致精简优化版发布</div>
+		<div>——2017年8月20日：A33、A53 ColorOS3.0 极致精简优化版更名为ColorOS3.0 Pro版</div>
+		<div>——2018年2月5日：A33、A53 ColorOS3.0 Pro版发布最后一个付费版本</div>
+		<div>——2018年5月1日：A33、A53 首个免费版ColorOS3.0 Pro版发布</div>
+		<div>——2018年9月16日：A33、A53 ColorOS3.0 Pro版宣布不再进行功能性更新</div>
+		<div>——2018年12月11日：A33、A53 ColorOS3.0 Pro版宣布只进行长期不定期更新</div>
+		<div>——2019年5月12日：A33、A53、R7sm ColorOS3.0 Pro纪念版发布</div>
+		</span>
+		<p id="title1" class="title">回顾ColorOS3.0 Pro版的特色功能：</p>
+		<span id="content1" class="contentClass">
+		<div>★新增 桌面主题全新升级，全新视觉，灵动溢彩(18-07-05)</div>
+		<div>★新增 全新视觉年轻的禅意之美，界面布白搭配有韵律节奏的渐进色，无边界美学更舒适优雅自然（19-01-29）</div>
+		<div>★新增 Real原声技术，给您更好的音质体验(03-08)</div>
+		<div>★新增 游戏引擎，智能识别游戏场景匹配最佳资源，随时保持最优状态，玩游戏更畅快(05-31)</div>
+		<div>★新增 全新改版横幅通知(05-26)、横幅来电(06-19)、锁屏通知(07-15)，版式布局更直观、清晰(05-26、06-19、07-15)</div>
+		<div>★新增 QQ、微信分身功能，工作生活两不误(03-08)</div>
+		<div>★新增 流量超市，整合话费充值、流量充值、国际上网功能，让网络永不间断(08-11)</div>
+		<div>★新增 全新控制中心、通知中心，夜间显示不辣眼(08-11)</div>
+		<div>★新增 一键锁屏快捷方式(11-04)</div>
+		</span>
+		<h3 id="title1" class="title">我们不再进行功能性的更新，但我们仍会对问题进行收集处理发布修复版本。感谢大家的支持！</h3>-->
+		<h3 id="title1" class="title">本次推荐</h3>
+		<span id="content2" class="contentClass">
+		  <div>★优化 通知中心的显示效果</div>
+		</span>
+		<h3 id="title2" class="title">往期更新日志</h3>
+		<div>&nbsp;</div>
+		<span id="content1" class="contentClass">
+		  <div>「日历」</div>
+		  <div>·优化 部分界面的显示效果</div>
+		  <div>·优化 更新2020年节假日数据</div>
+		  <div>「通信」​</div>
+		  <div>·优化 更新号码归属地数据​</div>
+		  <div>「备份与恢复」</div>
+		  <div>·优化 全新UI设计</div>
+		  <div>·优化 备份与恢复的入口迁移至“设置→其他设置→备份与恢复”</div>
+		  <div>「联系人、拨号」</div>
+		  <div>·优化 拨号界面改版</div>
+		  <div>「文件管理」</div>
+		  <div>·优化 对视觉风格进行优化</div>
+		  <div>「桌面」</div>
+		  <div>·新增 全新充满现代感的默认壁纸</div>
+		  <div>·新增 一键锁屏快捷方式</div>
+		  <div>·优化 部分细节、界面改版</div>
+		  <div>·优化 软件标题可显示两行</div>
+		  <div>·优化 桌面图标大小</div>
+		  <div>「便签」</div>
+		  <div>·新增 便签提醒，重要待办事项不遗忘</div>
+		  <div>·新增 便签宫格显示，界面布局更优美，操作更便捷</div>
+		  <div>·新增 便签个性化背景主题，让便签别具一格，让分享与众不同</div>
+		  <div>·新增 最近删除，误删除便签找回更快捷</div>
+		  <div>「Breeno」</div>
+		  <div>·新增 Breeno速览，智能显示出行服务卡片组合，提供目的地天气、时间、汇率、国际上网、旅游等服务信息</div>
+		  <div>·新增 Breeno速览，行程管理卡，及时提醒前往机场、车站的预计耗时，帮助您合理安排出行时间</div>
+		  <div>·新增 Breeno速览，主动通知关注的行程，提示及时出发、及时登机、及时乘车等状态</div>
+		  <div>·新增 Breeno速览-新闻资讯入口，海量新鲜资讯轻松知晓</div>
+		  <div>·优化 智能助手更名为Breeno速览，全新视觉，布局更合理，使用更便捷</div>
+		  <div>·优化 Breeno速览界面显示更轻量</div>
+		  <div>「工具」</div>
+		  <div>·新增 计算器计算过程中自动显示计算结果</div>
+		  <div>·优化 指南针的视觉风格</div>
+		  <div>「健康」</div>
+		  <div>·新增 健康应用，陪你一起智能运动，遇见更好的自己​</div>
+		  <div>「系统」​</div>
+		  <div>·新增 无边界设计全新升级，视觉更震撼，操作更高效，体验更自然</div>
+		  <div>·新增 OPPO Sans默认字体，整体简洁优雅，富有科技美感</div>
+		  <div>·优化 升级软件，系统更稳定​</div>
+		  <div>「系统 UI」</div>
+		  <div>·优化 状态栏高度、左右间距及视觉效果</div>
+		  <div>·优化 通知中心的显示效果</div>
+		  <div>·优化 横幅通知的显示效果</div>
+		  <div>·优化 音量弹窗的显示效果</div>
+		  <div>·优化 锁屏通知的显示效果</div>
+		  <div>·优化 锁屏状态时，状态栏的布局效果</div>
+		  <div>·优化 状态栏的字体显示</div>
+		  <div>·优化 控制中心的显示效果</div>
+		  <div>「设置」</div>
+		  <div>·优化 “关于手机”界面的显示效果</div>
+		  <div>「关于系统、系统应用管理、软件更新、关于手机」</div>
+		  <div>·新增 玩机补丁</div>
+		  <div>·新增 关于系统</div>
+		  <div>·新增 意见反馈</div>
+		  <div>·新增 高仿ColorOS 7版关于手机</div>
+		  <div>「主题」</div>
+		  <div>·新增 Art+桌面图标</div>
+		  <div>·优化 更新百变引擎</div>
+		</span>
+		<div>&nbsp;</div>
+		<h3 id="title2" class="title">更新日志</h3>
+		<span id="warning" class="warningClass">
+		  <strong>
+			<div>1. 该版本建议双清刷入</div>
+			<div>2. 若有问题或建议，可将意见反馈给作者（反馈入口：设置->关于系统->意见反馈）</div>
+		  </strong>
+		</span>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<span id="content1" class="contentClass">
+		  <div>「系统 UI」</div>
+		  <div>·优化 ​电池图标的显示</div>
+		  <div>「系统」</div>​
+		  <div>·优化 ​升级部分应用</div>
+		  <div>·修复 系统部分功能的异常</div>
+		  <div>「相机」​</div>
+		  <div>·修复 开启HDR时，相机闪退，且无法正常启动相机的问题</div>
+		  <div>·修复 切换专业模式时，相机闪退的问题​</div>
+		</span>
+        <div>&nbsp;</div>
+	  </span>
+	</div>
+  </body>
+</html>
