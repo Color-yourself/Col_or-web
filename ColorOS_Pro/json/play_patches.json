@@ -1,21 +1,29 @@
 [
   {
     "title_cn": "OPPO A33/A33m/R7sm",
+    "title_default": "OPPO A33/A33m/R7sm",
+    "title_en": "OPPO A33/A33m/R7sm",
     "link": "https://pan.baidu.com/s/19awnlhFA77TCYecg7kyPBg",
     "code": "9ya6"
   },
   {
     "title_cn": "OPPO A37/A59 系列",
+    "title_default": "OPPO A37/A59 Series",
+    "title_en": "OPPO A37/A59 Series",
     "link": "161488954",
     "code": "znvc"
   },
   {
     "title_cn": "OPPO A57/R9s/R9sPlus",
+    "title_default": "OPPO A57/R9s/R9sPlus",
+    "title_en": "OPPO A57/R9s/R9sPlus",
     "link": "https://pan.baidu.com/s/1UHQv3Ap2Rmv1V6d3Lwwifw",
     "code": "8s59"
   },
   {
     "title_cn": "通用",
+    "title_default": "Common passageway",
+    "title_en": "Common passageway",
     "link": "https://pan.baidu.com/s/1MD6u4ACVma8I2puLR9HIuw",
     "code": "2o31"
   }
