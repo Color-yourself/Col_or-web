@@ -8,8 +8,8 @@
 	<meta content="telephone=no" name="format-detection">
 	<meta content="email=no" name="format-detection">
 	<title></title>
-	<link rel="stylesheet" href="https://component-ota-afs.coloros.com/component-ota/20/08/16/dd5623eb-baf1-4c40-99ac-de48107d9570.css">
-	<link rel="stylesheet" href="https://component-ota-afs.coloros.com/component-ota/20/12/02/bb574d4371f644fabc7a9f9c3ddf080e.css">
+	<link rel="stylesheet" href="https://component-ota-afs.coloros.com/component-ota/21/01/06/35c022df96304632913c16f6379a49d2.css">
+	<link rel="stylesheet" href="https://component-ota-afs.coloros.com/component-ota/21/01/06/42a8c4e0ce8d430eaf0002b63b553c7b.css">
 	<script>
       (function (e, t) {
           var i = document,n = window;
@@ -121,8 +121,8 @@
 		<div id="operator"></div>
 	</div>
 </div>
-<script src="https://component-ota-afs.coloros.com/component-ota/20/08/16/521068e3-811e-4ce5-8528-da053eb8fe79.js"></script>
-<script src="https://component-ota-afs.coloros.com/component-ota/20/08/16/bec5614c-8d60-4b39-832d-611e09a5910b.js"></script>
+<script src="https://component-ota-afs.coloros.com/component-ota/21/01/06/1f34609fe61842d8909845da1cb42602.js"></script>
+<script src="https://component-ota-afs.coloros.com/component-ota/21/01/06/d11358d332c0453cb522a886566fea82.js"></script>
 <script type="text/javascript">
     var language = "zh-CN";
     var isFirst = true;
@@ -137,52 +137,60 @@
         });
     }
     window.onload = function(){
-        console.log('文档加载完');
-        try {
-            if (HeytapTheme && HeytapTheme.isNight()) {
-                console.log(HeytapTheme,'HeytapTheme');
-                console.log('进入暗色模式了');
-            }
-        } catch (error) {
-            console.log(error);
-            console.log('没找到暗色模式');
-        };
         if (query.fontType !== 'opposans') {
             $('body').css('font-family', 'sans-serif')
         }
-        query.logoType === "1"?$('#logoDiv').append('<img src="https://component-ota-afs.coloros.com/ota/20/12/29/5132e7e08fd047deac5a3f3c526125a2.apng" alt="" />'):$('#logoDiv').append('<img src="https://component-ota-afs.coloros.com/ota/20/12/29/ba0a326e982e437f835c165f6edf3ccd.apng" alt="" />');
         if (query.size) {
-            $("#size").html(decodeURI(query.size.replace(/%20/g, "&nbsp;")));
+            $("#size").html(decodeURI(query.size.replace(/%20/g, "&nbsp;")))
         }
+        if (query.darkmode === "true") {
+            document.body.style.backgroundColor = "#000000";
+            document.getElementById('black').className = 'black';
+        }
+        query.logoType === "1"?$('#logoDiv').append('<img src="https://component-ota-afs.coloros.com/component-ota/21/01/06/1078f7ff80c0456ea8b383e626dfe15c.apng" alt="" />'):$('#logoDiv').append('<img src="https://component-ota-afs.coloros.com/component-ota/21/01/06/a4b405c3fb6447f1a50c5fda0809161e.apng" alt="" />');
         if (query.operator && query.uLang) {
-            $("#operator").load("https://component-ota-afs.coloros.com/component-ota/html/OPE/"+query.operator + "/" +query.operator + "_" + query.uLang +".html");
+            $("#operator").load("/component-ota/html/OPE/"+query.operator + "/" +query.operator + "_" + query.uLang +".html");
         }
-        if (query.isShowVideo ==="false") {
+        if (query.isShowVideo === "false") {
             $("#video").remove();
         } else {
-            var myPlayer = videojs('my-video');
+            var myPlayer = videojs('my-video',{ errorDisplay: false});
             videojs("my-video").ready(function () {
                 var myPlayer = this;
+                myPlayer.on('error', function () {
+                    $("#video").hide();
+                    try {
+                        if (HeytapTheme&&HeytapTheme.isNight()) {
+                            $("#nonetwork img").attr('img','/component-ota/21/01/06/4b8a245222aa4fffa4db28d3c7133465.png')
+                        }
+                    } catch (error) {
+                        console.log(error,'非暗色模式')
+                    }
+                    $("#nonetwork").show();
+                });
                 $("#my-video").fadeIn('fast', function () {
                     if (query.isWifi === "true") {
-                        myPlayer.play();
+                        myPlayer.play()
                     } else {
                         myPlayer.pause();
                         myPlayer.on('play', function () {
                             if (isFirst) {
                                 app.showMsg();
-                                isFirst = false;
+                                isFirst = false
                             }
                         });
                     }
                 })
             });
+            myPlayer.on("ended", function () {
+                myPlayer.play()
+            })
         }
     };
     var lan = language.toUpperCase();
     if (lan == 'UR-PK' || lan == 'UR' || lan == 'AR' || lan == 'AR-EG' || lan == 'AR-IL' || lan == 'FA' || lan ==        'FA-IR' || lan == 'UG-CN' || lan == 'AR-AR') {
         document.getElementById("black").style.textAlign = 'right';
-        document.getElementById("black").setAttribute('dir', 'rtl');
+        document.getElementById("black").setAttribute('dir', 'rtl')
     }
 </script>
 </body>
