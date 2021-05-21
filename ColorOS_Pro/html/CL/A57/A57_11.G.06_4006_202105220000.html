@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport"/>
+    <title>OTA</title>
+    <style type="text/css">
+body, h1, h3, h2, p, h4 {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: "HelveticaNeue,Helvetica,Arial,sans-serif;";
+    font-weight: normal;
+}
+body[darkmode=true], body[darkmode=true] h1, body[darkmode=true] h3, body[darkmode=true] h2, body[darkmode=true] h4, body[darkmode=true] p, body[darkmode=true] div, body[darkmode=true] span {
+    background-color: #000000;
+    color: #ffffff !important;
+}
+.title {
+    color: #000000;
+    font-size: 0.28rem;
+    line-height: 0.64rem;
+    padding-top: 0.56rem;
+    font-family: "HelveticaNeue,Helvetica,Arial,sans-serif;";
+    font-weight: bolder;
+}
+#title2 {
+    padding-top: 0.52rem !important;
+}
+.contentClass {
+    padding-top: 0.02rem;
+    color: #989A9B;
+    font-size: 0.24rem;
+    word-wrap: break-word;
+    line-height: 0.34rem;
+    font-family: "HelveticaNeue,Helvetica,Arial,sans-serif;";
+    font-weight: normal;
+}
+.moreClass {
+    color: #1494e3;
+    font-size: 0.2rem;
+    line-height: 0.26rem;
+    word-wrap: break-word;
+    margin-bottom: 0.02rem;
+}
+a:link, a:visited, a:hover, a:hover {
+    color: #1494e3;
+}
+#more {
+    color: #000000;
+}
+.content {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+}
+.moreP {
+    padding: 0.64rem 0;
+}
+
+    </style>
+    <script>
+	(function flexible(window, document) {
+		var docEl = document.documentElement;
+		var dpr = window.devicePixelRatio || 1;
+		function setBodyFontSize() {
+			if (document.body) {
+				document.body.style.fontSize = (12 * dpr) + 'px'
+			} else {
+				document.addEventListener('DOMContentLoaded', setBodyFontSize)
+			}
+		}
+		setBodyFontSize();
+		function setRemUnit() {
+			var rem = docEl.clientWidth / 7.2;
+			docEl.style.fontSize = rem + 'px'
+		}
+		setRemUnit();
+		window.addEventListener('resize', setRemUnit);
+		window.addEventListener('pageshow', function (e) {
+			if (e.persisted) {
+				setRemUnit()
+			}
+		})
+	}(window, document))
+
+    </script>
+</head>
+<body>
+<script type="text/javascript">
+	var query = {};
+	var search = window.location.search.split("?")[1];
+	if (search) {
+		search = search.split("&");
+		search.forEach(s => {
+			var key = s.split("=")[0];
+			var value = s.split("=")[1];
+			query[key] = value;
+		});
+	}
+	if (query.darkmode === "true") {
+		document.body.style.backgroundColor = "#000000";
+		document.body.setAttribute("darkmode", true);
+	}
+
+</script>
+<textarea id="title1_pre" style="display: none;">前言</textarea>
+<textarea id="content1_pre" style="display: none;"><div id="content1" class="contentClass">&nbsp; &nbsp; &nbsp; &nbsp;欢迎您体验全新的ColorOS3.0 Pro版。感谢您给予的支持，如果喜欢我的作品，可以给我打赏哦，也可以帮忙激活内置的推广软件，然后多用几天哦～谢谢！
+		<div>&nbsp;</div>
+		<div align="right">KarAWM</div>
+		<div align="right">2020年03月01日</div></div>
+</textarea>
+<textarea id="title2_pre" style="display: none;">本次推荐</textarea>
+<textarea id="content2_pre" style="display: none;"><p>欢迎升级ColorOS Pro新版本，本次版本带来了诸多新特性，敬请浏览更新日志</p>
+</textarea>
+<textarea id="title3_pre" style="display: none;">更新日志</textarea>
+<textarea id="content3_pre" style="display: none;"><p>系统</p><p>[优化] 系统性能和系统稳定性</p>
+</textarea>
+<textarea id="title4_pre" style="display: none;">往期更新日志</textarea>
+<textarea id="content4_pre" style="display: none;"><p>关于系统、系统应用管理、软件更新、关于手机</p>
+<p>[新增] 系统应用管理</p>
+<p>[新增] 关于系统</p>
+<p>[新增] 意见反馈</p>
+<p>[新增] “软件更新”页面</p>
+<p>[新增] ColorOS 7版关于手机</p>
+<br>
+<p>桌面</p>
+<p>[新增] Art+静态壁纸</p>
+<p>[新增] 一键锁屏快捷方式</p>
+<p>[新增] 桌面默认布局调整为4x6布局</p>
+<p>[新增] 默认桌面插件支持显示天气</p>
+<p>[优化] 桌面插件风格</p>
+<p>[优化] 修改部分细节、界面</p>
+<p>[优化] 优化桌面图标大小</p>
+<br>
+<p>字体</p>
+<p>[优化] 字体兼容性</p>
+<br>
+<p>系统</p>
+<p>[新增] 无边界设计全新升级，视觉更震撼，操作更高效，体验更自然</p>
+<p>[新增] OPPO Sans默认字体，整体简洁优雅，富有科技美感</p>
+<p>[新增] Magisk 20.4版本</p>
+<p>[优化] 系统多处UI细节优化</p>
+<p>[优化] 去除在第三方文件管理器安装app的密码验证流程</p>
+<p>[优化] 去除在第三方文件管理器安装app的安全扫描流程</p>
+<p>[优化] 长按电源键进入关机界面的时间</p>
+<br>
+<p>系统 UI</p>
+<p>[优化] 开启飞行模式时，状态栏的时钟部位不再显示“飞行模式”提示语</p>
+<p>[优化] 开启低电量模式时，状态栏的时钟部位不再显示“低电量模式”提示语</p>
+<p>[优化] 去除状态栏root红色警告条</p>
+<p>[优化] 去除状态栏开发者选项黄色警告条及消息通知</p>
+<p>[优化] 去除状态栏辅助功能黄色警告条及消息通知</p>
+<p>[优化] 去除状态栏设备管理器黄色警告条及消息通知</p>
+<p>[优化] 手机连接电脑时，通知消息的显示效果</p>
+<p>[优化] 控制中心、通知中心界面改版，界面显示更整洁、更直观</p>
+<p>[优化] 最近任务视觉风格升级</p>
+<p>[优化] 全新的锁屏通知，白底黑字抓关键更快更准确</p>
+<p>[优化] 全新的横幅通知，抓住信息更快更准确</p>
+<p>[优化] 音量调节框的显示效果</p>
+<p>[优化] 调整状态栏高度及左右边距</p>
+<p>[优化] 锁屏界面全新改版，锁屏时钟采用OPPO Sans显示</p>
+<p>[优化] 取消按键截图的延迟时间，截图更快更便捷</p>
+<br>
+<p>日历</p>
+<p>[优化] 更新2020年节假日数据</p>
+<br>
+<p>通信</p>
+<p>[优化] 更新号码归属地数据</p>
+<p>[优化] 每日流量提醒的最低限度调整至100 MB</p>
+<p>[优化] 每日流量提醒的最高限度调整至1000 GB</p>
+<br>
+<p>备份与恢复</p>
+<p>[优化] 全新UI设计</p>
+<p>[优化] 备份与恢复的入口迁移至“设置→其他设置→备份与恢复”</p>
+<br>
+<p>便签</p>
+<p>[新增] 待办事项功能，完成一件勾一件，重要工作不会忘</p>
+<p>[新增] 视觉风格改版，内容无边界，更美更优雅</p>
+<br>
+<p>主题</p>
+<p>[新增] Art+桌面图标</p>
+<p>[优化] 更新百变引擎</p>
+<br>
+<p>设置</p>
+<p>[新增] 触摸提示音开关（设置->声音与振动）</p>
+<p>[优化] 首页布局</p>
+<p>[优化] “更多设置”，去除进入“辅助功能”以及“开发者选项”之前的验证码验证流程</p>
+<br>
+<p>应用</p>
+<p>[新增] 健康，监测运动健康数据，提供健康服务</p>
+<br>
+<p>工具</p>
+<p>[新增] WPS文档阅读插件</p>
+<p>[新增] 计算器计算过程中自动显示计算结果</p>
+<br>
+<p>相机</p>
+<p>[新增] 480P视频录制</p>
+<br>
+<p>时钟</p>
+<p>[优化] 调整秒表的字体大小</p>
+</textarea>
+<textarea id="more_word_pre" style="display: none;"></textarea>
+<textarea id="more_url_pre" style="display: none;"></textarea>
+<textarea id="language_pre" style="display: none;">zh-CN</textarea>
+<div class="content" id="content">
+    <h3 id="title1" class="title">前言</h3>
+    <p id="content1" class="contentClass"></p>
+    <p id="title1Top" style="padding-top: 0.24rem;display: none"></p>
+    <h3 id="title2" class="title">本次推荐</h3>
+    <p id="content2" class="contentClass"></p>
+    <p id="title2Top" style="padding-top: 0.24rem;display: none"></p>
+    <h3 id="title3" class="title">更新日志</h3>
+    <p id="content3" class="contentClass"></p>
+    <h3 id="title4" class="title">往期更新日志</h3>
+    <p id="content4" class="contentClass"></p>
+    <div class="moreP">
+        <p id="more" class="moreClass"></p>
+        <div class="moreClass">
+        </div>
+    </div>
+</div>
+<script>
+	var title1 = document.getElementById("title1_pre").value;
+	var content1 = document.getElementById("content1_pre").value;
+	var title2 = document.getElementById("title2_pre").value;
+	var content2 = document.getElementById("content2_pre").value;
+	var title3 = document.getElementById("title3_pre").value;
+	var content3 = document.getElementById("content3_pre").value;
+	var title3 = document.getElementById("title4_pre").value;
+	var content3 = document.getElementById("content4_pre").value;
+	var more_word = document.getElementById("more_word_pre").value;
+	var more_url = document.getElementById("more_url_pre").value;
+	var language = document.getElementById("language_pre").value;
+	if (title1 == '') {
+		document.getElementById("title1").style.display = "none";
+	} else {
+		document.getElementById("title1").innerHTML = title1;
+	}
+	if (content1 == '') {
+		document.getElementById("content1").style.display = "none";
+		document.getElementById("title2Top").style.display = "block";
+	} else {
+		document.getElementById("content1").innerHTML = content1;
+		document.getElementById("title2Top").style.display = "none";
+	}
+	document.getElementById("title2").innerHTML = title2;
+	document.getElementById("content2").innerHTML = content2;
+	document.getElementById("title3").innerHTML = title3;
+	document.getElementById("content3").innerHTML = content3;
+	document.getElementById("title4").innerHTML = title4;
+	document.getElementById("content4").innerHTML = content4;
+	document.getElementById("more").innerHTML = more_word;
+	document.getElementById("more_url").innerHTML = more_url;
+	document.getElementById("more_url").setAttribute("href", more_url);
+	var lan = language.toUpperCase();
+	if (lan == 'UR-PK' || lan == 'UR' || lan == 'AR' || lan == 'AR-EG' || lan == 'AR-IL' || lan == 'FA' || lan ==      'FA-IR' || lan == 'UG-CN') {
+		document.getElementById("content").style.textAlign = 'right';
+		document.getElementById("content").setAttribute('dir', 'rtl')
+	}
+
+</script>
+</body>
+</html>
