@@ -2,21 +2,15 @@
 <html lang="zh">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="UTF-8">
+<!--    <meta http-equiv="Content-Type" content="text/html" />-->
     <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport"/>
     <title>为ColorOS Pro 付费</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
 
     <style type="text/css">
-		body,
-		h1,
-		h3,
-		h2,
-		p,
-		h4 {
-
-		}
-
 		body {
             line-height: 1.5;
             font-size: 14px;
@@ -35,10 +29,6 @@
 		#title1 {
 			padding-top: 1.625rem !important;
 		}
-
-        #right {
-            text-align: right;
-        }
 
 		.moreClass {
 			color: #1494e3;
@@ -67,21 +57,29 @@
 			padding: 2rem 0;
 		}
 
-		dt {
+		.list dt {
 		    margin-bottom: 0.18rem;
             font-weight: 700;
-            font-size: .875rem;
+            font-size: 1rem;
             letter-spacing: .0055rem;
             white-space: pre-line
         }
 
-		dd {
-		    opacity: .55;
-            font-size: .56rem;
+		.list>dd {
+		    color: #737373;
+            font-size: .85rem;
             margin-bottom: .48rem;
             margin-left: 1.5rem;
             letter-spacing: .0055rem;
             white-space: pre-line
+		}
+
+		.qr_code>dd {
+		    margin: 0;
+		}
+
+		.qr_code>dd img {
+		    width: 300px;
 		}
     </style>
 </head>
@@ -89,7 +87,7 @@
 <h2 style="color: red">请先确保会熟练刷机之后再付费，请先确保会熟练刷机之后再付费</h2>
 <h3 id="title1" class="title">介绍（2021年7月26日更新）</h3>
 <div>
-    <dl>
+    <dl class="list">
         <dt>ColorOS Pro系列已经开启付费计划，以下机型为部分机型最后一个免费版的版本号：
             ★最后一个免费版本并不代表免费版本停止更新
         </dt>
@@ -98,24 +96,24 @@
         <dd id="available_version"></dd>
         <dt>以下列表为更新机型升级到新版本的价格（仅对付费过的用户生效，参与过对应机型众筹的可用众筹金额抵消对应机型金额）：</dt>
         <dd id="upgrade_version"></dd>
-        <script>
-            $(function() {
-                $('#end_free').load('text/end_free.txt');
-                $('#available_version').load('text/available_version.txt');
-                $('#upgrade_version').load('text/upgrade_version.txt');
-            });
-        </script>
         <dt>由于部分原因，原付费信息提交工具无法提交数据，但仍可查看主板序列号，在App中获取到主板序列号之后，请前往对应机型的问卷如实填写：</dt>
         <dd>
             <dl>
-                <dt>主板序列号查看工具地址（里面的提交功能无效，请填问卷）：<a
+                <dt style="color: #000000">主板序列号查看工具地址（里面的提交功能无效，请填问卷）：<a
                         href="https://cloud.189.cn/t/VZVjmiz2Un2i">点击下载</a></dt>
                 <dd>OPPO R9m/R9tm/R9km：<a
                         href="https://wj.qq.com/s2/8632813/5f88">点击填写</a>
                     OPPO K1/R15x：<a href="https://wj.qq.com/s2/8511699/71b6">点击填写</a></dd>
             </dl>
         </dd>
-        <br>
+        <script>
+            $(function() {
+                $('#end_free').load('text/end_free.txt');
+                $('#available_version').load('text/available_version.txt');
+                $('#upgrade_version').load('text/upgrade_version.txt');
+                $('a').button();
+            });
+        </script>
         <!--    &nbsp; &nbsp; &nbsp; &nbsp;OPPO R9s/R9sk/R9st/R9skt：从200829升级到2021.2：11r<br>-->
         <!--    &nbsp; &nbsp; &nbsp; &nbsp;OPPO R9s/R9sk/R9st/R9skt：从2021.1升级到2021.2：7r<br>-->
         <!--&nbsp; &nbsp; &nbsp; &nbsp;OPPO A57/A57t：12r<br>-->
@@ -123,19 +121,16 @@
         <!--以下列表为更新机型为201005版本升级到新版本的价格（仅对付费过的用户生效，参与过对应机型众筹的可用众筹金额抵消对应机型金额）：<br>
         &nbsp; &nbsp; &nbsp; &nbsp;OPPO A57/A57t：6r<br>-->
         <!--		  付完费之后请前往以下地址下载付费信息提交工具，以提交信息：<br>-->
-
-        &nbsp; &nbsp; &nbsp; &nbsp;
     </dl>
 
 </div>
-<div>&nbsp;</div>
-<dl style="text-align: center">
+<dl class="qr_code" style="text-align: center">
     <dt class="title">QQ</dt>
-    <dd><img src="image/qq.png" width="230"/></dd>
+    <dd><img alt="QQ" src="img/qq.png"/></dd>
     <dt class="title">微信</dt>
-    <dd><img src="image/wechat.png" width="230"/></dd>
+    <dd><img alt="WeChat" src="img/wechat.png"/></dd>
     <dt class="title">支付宝</dt>
-    <dd><img src="image/alipay.png" width="230"/></dd>
+    <dd><img alt="Alipay" src="img/alipay.png"/></dd>
 </dl>
 <div>&nbsp;</div>
 </body>
