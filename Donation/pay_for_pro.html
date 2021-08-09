@@ -68,8 +68,9 @@
 		.list>dd {
 		    color: #737373;
             font-size: .85rem;
+            line-height: 200%;
             margin-bottom: .48rem;
-            margin-left: 1.5rem;
+            margin-left: 1rem;
             letter-spacing: .0055rem;
             white-space: pre-line
 		}
@@ -82,38 +83,36 @@
 		    width: 300px;
 		}
     </style>
+    <script>
+        $(function() {
+            $('#end_free').load('text/end_free.html');
+            $('#available_version').load('text/available_version.html');
+            $('#upgrade_version').load('text/upgrade_version.html');
+            $('#questionnaire').load('text/questionnaire.html');
+            $('a').button();
+        });
+    </script>
 </head>
 <body class="content">
 <h2 style="color: red">请先确保会熟练刷机之后再付费，请先确保会熟练刷机之后再付费</h2>
-<h3 id="title1" class="title">介绍（2021年7月26日更新）</h3>
+<h3 id="title1" class="title">介绍（2021年8月6日更新）</h3>
 <div>
     <dl class="list">
-        <dt>ColorOS Pro系列已经开启付费计划，以下机型为部分机型最后一个免费版的版本号：
-            ★最后一个免费版本并不代表免费版本停止更新
+        <dt>ColorOS Pro系列已经开启付费计划，以下机型为部分机型最新免费版本的版本号：
         </dt>
         <dd id="end_free"></dd>
-        <dt>以下列表为更新机型付费版本的首付价格（仅对第一次付费的用户生效，参与过对应机型众筹的可用众筹金额抵消对应机型金额）：</dt>
+        <dt>以下列表为更新机型付费版本的首付价格（第一次付费的用户请看这里，参与过对应机型众筹的可用众筹金额抵消对应机型金额）：</dt>
         <dd id="available_version"></dd>
-        <dt>以下列表为更新机型升级到新版本的价格（仅对付费过的用户生效，参与过对应机型众筹的可用众筹金额抵消对应机型金额）：</dt>
+        <dt>以下列表为更新机型升级到新版本的价格（付费过的用户请看这里，参与过对应机型众筹的可用众筹金额抵消对应机型金额）：</dt>
         <dd id="upgrade_version"></dd>
         <dt>由于部分原因，原付费信息提交工具无法提交数据，但仍可查看主板序列号，在App中获取到主板序列号之后，请前往对应机型的问卷如实填写：</dt>
         <dd>
             <dl>
                 <dt style="color: #000000">主板序列号查看工具地址（里面的提交功能无效，请填问卷）：<a
                         href="https://cloud.189.cn/t/VZVjmiz2Un2i">点击下载</a></dt>
-                <dd>OPPO R9m/R9tm/R9km：<a
-                        href="https://wj.qq.com/s2/8632813/5f88">点击填写</a>
-                    OPPO K1/R15x：<a href="https://wj.qq.com/s2/8511699/71b6">点击填写</a></dd>
+                <dd id="questionnaire"></dd>
             </dl>
         </dd>
-        <script>
-            $(function() {
-                $('#end_free').load('text/end_free.txt');
-                $('#available_version').load('text/available_version.txt');
-                $('#upgrade_version').load('text/upgrade_version.txt');
-                $('a').button();
-            });
-        </script>
         <!--    &nbsp; &nbsp; &nbsp; &nbsp;OPPO R9s/R9sk/R9st/R9skt：从200829升级到2021.2：11r<br>-->
         <!--    &nbsp; &nbsp; &nbsp; &nbsp;OPPO R9s/R9sk/R9st/R9skt：从2021.1升级到2021.2：7r<br>-->
         <!--&nbsp; &nbsp; &nbsp; &nbsp;OPPO A57/A57t：12r<br>-->
