@@ -12,7 +12,7 @@
     <link rel="stylesheet"
           href="https://component-ota-afs.coloros.com/component-ota/21/01/06/35c022df96304632913c16f6379a49d2.css">
     <link rel="stylesheet"
-          href="https://component-ota-afs.coloros.com/component-ota/21/01/06/42a8c4e0ce8d430eaf0002b63b553c7b.css">
+          href="https://component-ota-afs.coloros.com/component-ota/21/04/29/0f5413e63e6546399ccc70ef1cb15b52.css">
     <script>
       (function (e, t) {
           var i = document,n = window;
@@ -76,13 +76,14 @@
           }
       })(1080, 1080);
     </script>
-    <script src="https://static-common.heytapdownload.com/night_3_0.js"></script>
+    <script src="https://component-ota-afs.coloros.com/component-ota/21/01/06/63272efe301e471282677661a56db743.js"></script>
 </head>
 <body>
 <div id="black">
     <div class="logo" id="logoDiv"></div>
     <div class="title plr72">
-        <h1>ColorOS 5.2.1 Pro | Android 7.1.1</h1>
+        <h1>ColorOS <span id="osVersion">5.2.1 Pro</span>&nbsp;<span id="shu">|</span>&nbsp;Android 7.1.1
+        </h1>
         <h2>正式版&nbsp;&nbsp;&nbsp;&nbsp;<span id="size">已是最新版本</span>&nbsp;&nbsp;&nbsp;&nbsp;2021.08.15
         </h2>
         <h3>R9s_11_G.18</h3>
@@ -121,7 +122,7 @@
                     [优化] 去除“酷我音乐”等预装App
                 </dd>
                 <dt>Breeno</dt>
-                <dd>[优化] Breeno 速览的背景颜色</dd>
+                <dd>[优化] Breeno 速览的背景颜色，使得与桌面的过渡更加自然</dd>
             </dl>
         </div>
         <div class="small-title"> 往期更新日志</div>
@@ -256,9 +257,12 @@
             query[key] = value;
         });
     }
-    window.onload = function(){
+    window.onload = function () {
         if (query.fontType !== 'opposans') {
             $('body').css('font-family', 'sans-serif')
+        }
+        if (query.osVersion) {
+            $("#osVersion").text(query.osVersion)
         }
         if (query.size) {
             $("#size").html(decodeURI(query.size.replace(/%20/g, "&nbsp;")))
@@ -267,24 +271,28 @@
             document.body.style.backgroundColor = "#000000";
             document.getElementById('black').className = 'black';
         }
-        query.logoType === "1"?$('#logoDiv').append('<img src="https://component-ota-afs.coloros.com/component-ota/21/01/06/1078f7ff80c0456ea8b383e626dfe15c.apng" alt="" />'):$('#logoDiv').append('<img src="https://component-ota-afs.coloros.com/component-ota/21/01/06/a4b405c3fb6447f1a50c5fda0809161e.apng" alt="" />');
+        query.logoType === "1" ? $('#logoDiv').append('<img src="https://component-ota-afs.coloros.com/component-ota/21/01/06/1078f7ff80c0456ea8b383e626dfe15c.apng" alt="" />') : $('#logoDiv').append('<img src="https://component-ota-afs.coloros.com/component-ota/21/01/06/a4b405c3fb6447f1a50c5fda0809161e.apng" alt="" />');
         if (query.operator && query.uLang) {
-            $("#operator").load("/component-ota/html/OPE/"+query.operator + "/" +query.operator + "_" + query.uLang +".html");
+            $("#operator").load("https://component-ota-afs.coloros.com/component-ota/html/OPE/"+query.operator + "/" +query.operator + "_" + query.uLang +".html");
+        }
+        if (query.size) {
+            var txt = decodeURIComponent(query.size);
+            $("#size").html(txt.replace(/%20/g, "&nbsp;"));
         }
         if (query.isShowVideo === "false") {
             $("#video").remove();
         } else {
-            var myPlayer = videojs('my-video',{ errorDisplay: false});
+            var myPlayer = videojs('my-video', {errorDisplay: false});
             videojs("my-video").ready(function () {
                 var myPlayer = this;
                 myPlayer.on('error', function () {
                     $("#video").hide();
                     try {
-                        if (HeytapTheme&&HeytapTheme.isNight()) {
-                            $("#nonetwork img").attr('img','/component-ota/21/01/06/4b8a245222aa4fffa4db28d3c7133465.png')
+                        if (HeytapTheme && HeytapTheme.isNight()) {
+                            $("#nonetwork img").attr('img', 'https://component-ota-afs.coloros.com/component-ota/21/01/06/4b8a245222aa4fffa4db28d3c7133465.png')
                         }
                     } catch (error) {
-                        console.log(error,'非暗色模式')
+                        console.log(error, '非暗色模式')
                     }
                     $("#nonetwork").show();
                 });
@@ -308,10 +316,11 @@
         }
     };
     var lan = language.toUpperCase();
-    if (lan == 'UR-PK' || lan == 'UR' || lan == 'AR' || lan == 'AR-EG' || lan == 'AR-IL' || lan == 'FA' || lan ==        'FA-IR' || lan == 'UG-CN' || lan == 'AR-AR') {
+    if (lan == 'UR-PK' || lan == 'UR' || lan == 'AR' || lan == 'AR-EG' || lan == 'AR-IL' || lan == 'FA' || lan == 'FA-IR' || lan == 'UG-CN' || lan == 'AR-AR') {
         document.getElementById("black").style.textAlign = 'right';
         document.getElementById("black").setAttribute('dir', 'rtl')
     }
-    </script>
+
+</script>
 </body>
 </html>
