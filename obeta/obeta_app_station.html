@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>O Beta</title>
+    <link rel="icon" href="img/obeta_favicon.png">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0 14px;
+        background-color: #f0f2f5;
+    }
+
+    .header {
+        padding: 16px 0 8px;
+    }
+
+    .application_info {
+        display:contents;
+        margin: 10px 0;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr; 
+        /* grid-row: 4; */
+        /* grid-auto-rows:minmax(100px,auto);
+        grid-auto-columns: minmax(100px,auto); */
+    }
+
+    .declare {
+        padding: 0;
+        margin: 0;
+    }
+
+    .declare dt h4 {
+        margin: 0 auto;
+    }
+
+    .declare dd {
+        font-size: 14px;
+        white-space: pre-line;
+        margin: 5px 16px 0;
+    }
+
+    .app {
+        /* width: 100%; */
+        /* float: left; */
+        /* grid-column: 1; */
+        /* grid-row:1; */
+        font-size: 12px;
+        text-align: center;
+        text-decoration: none;
+        padding: 5px 0;
+        border-width: 0;
+        border-radius: 15px;
+    }
+
+    .app:active {
+        background-color: #ebebeb;
+    }
+
+    .app .app_icon {
+        height: 50px;
+        width: 50px;
+        padding: 2px;
+    }
+
+    .app h5 {
+        margin: 0;
+        padding: 7px 5px 0;
+        color: black;
+        font-weight: normal;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function () {
+        var url = "obeta_app_list.json"/*json文件url，本地的就写本地的位置，如果是服务器的就写服务器的路径*/
+        var request = new XMLHttpRequest();
+        request.open("get", url);/*设置请求方法与路径*/
+        request.send(null);/*不发送数据到服务器*/
+        request.onload = function () {/*XHR对象获取到返回信息后执行*/
+            if (request.status == 200) {/*返回状态为200，即为数据获取成功*/
+                var json = JSON.parse(request.responseText);
+                var a = "";
+                json.obeta_app_list.map(obeta_app_list => {
+                    a += `<a class="app" href="${obeta_app_list.target_url}">` +
+                        `<img class="app_icon" alt="${obeta_app_list.img_name}" src="app_icon/${obeta_app_list.img_name}.png"/>` +
+                        `<h5>${obeta_app_list.app_name}</h5>` +
+                        `</a>`;
+                });
+                $(".application_info").html(a);
+            }
+        }
+    });
+</script>
+
+<body>
+    <div class="header" style="text-align: center;">
+        <img src="img/obeta_header.png" width="86%">
+    </div>
+    <dl class="declare">
+        <dt><h4>声明</h4></dt>
+        <dd>「网页信息」
+            ·本网页的主要内容来源于欧贝塔公众号，网页内容已经授权制作
+            ·本网页采用的App图标来自<a href="https://www.coloros.com">ColorOS</a>，并经后期处理
+            ·本网页主要开发者：<a href="https://github.com/color597">Col_or</a>
+            ●为方便归纳整理，部分软件的文件夹和链接有变动：
+            1. 「OPPO 社区」、「ColorOS 社区」「realme 社区」和「一加社区」归类到「社区」文件夹下分类。
+            2. 「OPPO 无线设备」、「realme 无线设备」和「一加无线设备」归类到「无线设备」文件夹下分类。
+            3. 「OPPO 时钟」和「一加时钟」归类到「时钟」文件夹下分类。
+            4. 「OPPO 相册」和「一加相册」归类到「相册」文件夹下分类。
+            5. 「OPPO 互传」和「一加互传」归类到「互传」文件夹下分类。
+            6. 「我的 OPPO」、「我的 realme」和「我的一加」归类到「我的欢太」文件夹下分类。
+            *欧加（OPlus），指OPPO、OnePlus、realme。
+            *以下软件按拼音首字母顺序排列。
+        </dd>
+    </dl>
+    <div class="application_info">
+        <!-- <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="app_icon/ColorDirectUI.png"/>
+            <h5>「我的 OPPO」、「我的 realme」和「我的一加」归类到「我的欢太」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="app_icon/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="app_icon/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="app_icon/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="app_icon/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="app_icon/ColorDirectUI.png"/>
+            <h5>「我的 OPPO」、「我的 realme」和「我的一加」归类到「我的欢太」</h5>
+        </a> -->
+        <!-- <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「我的 OPPO」、「我的 realme」和「我的一加」归类到「我的欢太」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「我的 OPPO」、「我的 realme」和「我的一加」归类到「我的欢太」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「我的 OPPO」、「我的 realme」和「我的一加」归类到「我的欢太」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「我的 OPPO」、「我的 realme」和「我的一加」归类到「我的欢太」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「我的 OPPO」、「我的 realme」和「我的一加」归类到「我的欢太」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「我的 OPPO」、「我的 realme」和「我的一加」归类到「我的欢太」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「我的 OPPO」、「我的 realme」和「我的一加」归类到「我的欢太」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「我的 OPPO」、「我的 realme」和「我的一加」归类到「我的欢太」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「我的 OPPO」、「我的 realme」和「我的一加」归类到「我的欢太」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「我的 OPPO」、「我的 realme」和「我的一加」归类到「我的欢太」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「我的 OPPO」、「我的 realme」和「我的一加」归类到「我的欢太」</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>aaa</h5>
+        </a>
+        <a class="app" href="#">
+            <img class="app_icon" alt="aaa" src="img/ColorDirectUI.png"/>
+            <h5>「OPPO 互传」和「一加互传」归类到「互传」</h5>
+        </a> -->
+    </div>
+</body>
+
+</html>

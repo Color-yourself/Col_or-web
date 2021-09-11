@@ -1,0 +1,469 @@
+{
+    "obeta_app_list": [
+        {
+            "app_name": "安全事件",
+            "img_name": "SecurityGuard",
+            "target_url": "https://www.lanzoui.com/b00ntfsof"
+        }, 
+        {
+            "app_name": "安全支付",
+            "img_name": "KeKePay",
+            "target_url": "https://www.lanzoui.com/b00nw039i"
+        }, 
+        {
+            "app_name": "百度输入法定制版",
+            "img_name": "BaiduInput",
+            "target_url": "https://www.lanzoui.com/b00ntfmte"
+        }, 
+        {
+            "app_name": "爆赞小视频 / 极速视频",
+            "img_name": "Baozan",
+            "target_url": "https://chain.lanzoui.com/b00nl2p6d"
+        }, 
+        {
+            "app_name": "便签",
+            "img_name": "OppoNote2",
+            "target_url": "https://chain.lanzoui.com/b00nl2nvg"
+        }, 
+        {
+            "app_name": "Breeno 驾驶",
+            "img_name": "SmartDrive",
+            "target_url": "https://www.lanzoui.com/b00ntft6d"
+        }, 
+        {
+            "app_name": "Breeno 空间",
+            "img_name": "PersonalAssistant",
+            "target_url": "https://www.lanzoui.com/b00ntfn2d"
+        }, 
+        {
+            "app_name": "Breeno 扫一扫",
+            "img_name": "OcrScanner",
+            "target_url": "https://chain.lanzoui.com/b00nom5xi"
+        }, 
+        {
+            "app_name": "Breeno 识屏",
+            "img_name": "ColorDirectUI",
+            "target_url": "https://chain.lanzoui.com/b00nl9stg"
+        }, 
+        {
+            "app_name": "Breeno 速览",
+            "img_name": "AssistantScreen",
+            "target_url": "https://chain.lanzoui.com/b00nl2npa"
+        }, 
+        {
+            "app_name": "Breeno 指令",
+            "img_name": "Shortcuts",
+            "target_url": "https://chain.lanzoui.com/b00nrrtre"
+        }, 
+        {
+            "app_name": "CarLink",
+            "img_name": "CarLink",
+            "target_url": "https://chain.lanzoui.com/b00ouvofa"
+        }, 
+        {
+            "app_name": "超级多屏",
+            "img_name": "OneScreen",
+            "target_url": "https://chain.lanzoui.com/b00olmxxe"
+        }, 
+        {
+            "app_name": "查找手机",
+            "img_name": "FindMyPhoneClient2",
+            "target_url": "https://chain.lanzoui.com/b00o7nrxa"
+        }, 
+        {
+            "app_name": "电话组件",
+            "img_name": "Contacts",
+            "target_url": "https://chain.lanzoui.com/b00nnzgmf"
+        }, 
+        {
+            "app_name": "咚咚传情",
+            "img_name": "DongDong",
+            "target_url": "https://chain.lanzoui.com/b00o63qni"
+        }, 
+        {
+            "app_name": "翻译服务",
+            "img_name": "OppoTranslationService",
+            "target_url": "https://www.lanzoui.com/b00ntfsyf"
+        }, 
+        {
+            "app_name": "共享与协助",
+            "img_name": "ShareScreen",
+            "target_url": "https://chain.lanzoui.com/b00oeiksf"
+        }, 
+        {
+            "app_name": "国际上网",
+            "img_name": "SoftsimRedteaRoaming",
+            "target_url": "https://chain.lanzoui.com/b00nom5vg"
+        }, 
+        {
+            "app_name": "欢律",
+            "img_name": "Headset",
+            "target_url": "https://www.lanzoui.com/b00nxqjgd"
+        }, 
+        {
+            "app_name": "欢太商城",
+            "img_name": "OPPOStore",
+            "target_url": "https://chain.lanzoui.com/b00nl2nje"
+        }, 
+        {
+            "app_name": "欢太有奖众包",
+            "img_name": "OCSP",
+            "target_url": "https://chain.lanzoui.com/b00o6mycj"
+        }, 
+        {
+            "app_name": "互传",
+            "img_name": "OShare",
+            "target_url": "https://chain.lanzoui.com/b00oin5bc"
+        }, 
+        {
+            "app_name": "健康",
+            "img_name": "Health",
+            "target_url": "https://chain.lanzoui.com/b00nl2nza"
+        }, 
+        {
+            "app_name": "截屏",
+            "img_name": "ColorScreenshot",
+            "target_url": "https://www.lanzoui.com/b00nvkbde"
+        }, 
+        {
+            "app_name": "即录剪辑",
+            "img_name": "OppoVideoEditor",
+            "target_url": "https://chain.lanzoui.com/b00nl2nmh"
+        }, 
+        {
+            "app_name": "计算器",
+            "img_name": "Calculator2",
+            "target_url": "https://chain.lanzoui.com/b00nl2nwh"
+        }, 
+        {
+            "app_name": "快应用",
+            "img_name": "Instant",
+            "target_url": "https://chain.lanzoui.com/b00nox6qd"
+        }, 
+        {
+            "app_name": "快游戏",
+            "img_name": "LiteGame",
+            "target_url": "https://chain.lanzoui.com/b00nqofva"
+        }, 
+        {
+            "app_name": "跨屏互联",
+            "img_name": "HeySynergy",
+            "target_url": "https://chain.lanzoui.com/b00oru5na"
+        }, 
+        {
+            "app_name": "乐划锁屏",
+            "img_name": "Pictorial",
+            "target_url": "https://chain.lanzoui.com/b00nm0cng"
+        }, 
+        {
+            "app_name": "浏览器",
+            "img_name": "Browser",
+            "target_url": "https://chain.lanzoui.com/b00nl2o3e"
+        }, 
+        {
+            "app_name": "录音",
+            "img_name": "NewSoundRecorder",
+            "target_url": "https://chain.lanzoui.com/b00nl2nxi"
+        }, 
+        {
+            "app_name": "密码本",
+            "img_name": "CodeBook",
+            "target_url": "https://chain.lanzoui.com/b00ojwofa"
+        }, 
+        {
+            "app_name": "OPPO 电视助手",
+            "img_name": "OppoTVAssistant",
+            "target_url": "https://www.lanzoui.com/b00nzbk6b"
+        }, 
+        {
+            "app_name": "OPPO LAB",
+            "img_name": "OPPOLab",
+            "target_url": "https://chain.lanzoui.com/b00nnvjvi"
+        }, 
+        {
+            "app_name": "O Relax",
+            "img_name": "ORelax",
+            "target_url": "https://www.lanzoui.com/b00nl2pkh"
+        }, 
+        {
+            "app_name": "屏幕录制",
+            "img_name": "ColorScreenRecorder",
+            "target_url": "https://chain.lanzoui.com/b00nntf3e"
+        }, 
+        {
+            "app_name": "钱包",
+            "img_name": "FinShellWallet",
+            "target_url": "https://chain.lanzoui.com/b00nl2o6h"
+        }, 
+        {
+            "app_name": "全局搜索",
+            "img_name": "GlobalSearch",
+            "target_url": "https://chain.lanzoui.com/b00nl2nte"
+        }, 
+        {
+            "app_name": "日历",
+            "img_name": "Calendar",
+            "target_url": "https://chain.lanzoui.com/b00nnzgyh"
+        }, 
+        {
+            "app_name": "软件商店",
+            "img_name": "KeKeMarket",
+            "target_url": "https://chain.lanzoui.com/b00nl2nfa"
+        }, 
+        {
+            "app_name": "入眠胶囊",
+            "img_name": "SleepWellBeing",
+            "target_url": "https://chain.lanzoui.com/b00ol0tdi"
+        }, 
+        {
+            "app_name": "社区",
+            "img_name": "OppoCommunity",
+            "target_url": "https://chain.lanzoui.com/b00nl2o5g"
+        }, 
+        {
+            "app_name": "设置",
+            "img_name": "Settings",
+            "target_url": "https://chain.lanzoui.com/b00odpxmd"
+        }, 
+        {
+            "app_name": "深度测试",
+            "img_name": "DeepTesting",
+            "target_url": "https://chain.lanzoui.com/b00odbstg"
+        }, 
+        {
+            "app_name": "视频",
+            "img_name": "BrowserVideo",
+            "target_url": "https://chain.lanzoui.com/b00nl2p4b"
+        }, 
+        {
+            "app_name": "使用技巧",
+            "img_name": "OperationTips",
+            "target_url": "https://www.lanzoui.com/b00nsit8h"
+        }, 
+        {
+            "app_name": "时钟",
+            "img_name": "Clock",
+            "target_url": "https://chain.lanzoui.com/b00npykib"
+        }, 
+        {
+            "app_name": "手机搬家",
+            "img_name": "BackupAndRestore",
+            "target_url": "https://www.lanzoui.com/b00nsit4d"
+        }, 
+        {
+            "app_name": "手机管家",
+            "img_name": "PhoneManager",
+            "target_url": "https://chain.lanzoui.com/b00nnzgha"
+        }, 
+        {
+            "app_name": "手势体感",
+            "img_name": "OppoGesture",
+            "target_url": "https://chain.lanzoui.com/b00o63tud"
+        }, 
+        {
+            "app_name": "书城",
+            "img_name": "HeyTapBook",
+            "target_url": "https://www.lanzoui.com/b00ntfm6b"
+        }, 
+        {
+            "app_name": "数据服务平台",
+            "img_name": "SceneService",
+            "target_url": "https://www.lanzoui.com/b00nsiswf"
+        }, 
+        {
+            "app_name": "私密保险箱",
+            "img_name": "FileEncryption",
+            "target_url": "https://chain.lanzoui.com/b00of0vne"
+        }, 
+        {
+            "app_name": "SOS 紧急联络",
+            "img_name": "SOSHelper",
+            "target_url": "https://chain.lanzoui.com/b00od8awd"
+        }, 
+        {
+            "app_name": "搜狗输入法定制版",
+            "img_name": "SogouInput",
+            "target_url": "https://chain.lanzoui.com/b00nl2obc"
+        }, 
+        {
+            "app_name": "天气",
+            "img_name": "OppoWeather2",
+            "target_url": "https://chain.lanzoui.com/b00nl2nuf"
+        }, 
+        {
+            "app_name": "文件管理",
+            "img_name": "FileManager",
+            "target_url": "https://chain.lanzoui.com/b00nl2nsd"
+        }, 
+        {
+            "app_name": "我的欢太（我的 OPPO / realme / 一加）",
+            "img_name": "KeKeUserCenter",
+            "target_url": "https://chain.lanzoui.com/b00nl2o8j"
+        }, 
+        {
+            "app_name": "我的设备",
+            "img_name": "MyDevices",
+            "target_url": "https://www.lanzoui.com/b00nxujvc"
+        }, 
+        {
+            "app_name": "WPS 文档查看器定制版",
+            "img_name": "DocumentReader",
+            "target_url": "https://www.lanzoui.com/b00ntfnpg"
+        }, 
+        {
+            "app_name": "无线设备",
+            "img_name": "OppoPods",
+            "target_url": "https://chain.lanzoui.com/b00nltwof"
+        }, 
+        {
+            "app_name": "相册",
+            "img_name": "OppoGallery3d",
+            "target_url": "https://chain.lanzoui.com/b00oe377g"
+        }, 
+        {
+            "app_name": "相机",
+            "img_name": "OppoCamera",
+            "target_url": "https://chain.lanzoui.com/b00omykgh"
+        }, 
+        {
+            "app_name": "小布助手",
+            "img_name": "HeyTapSpeechAssist",
+            "target_url": "https://chain.lanzoui.com/b00nl2noj"
+        }, 
+        {
+            "app_name": "小游戏",
+            "img_name": "QuickGame",
+            "target_url": "https://chain.lanzoui.com/b00nl2o9a"
+        }, 
+        {
+            "app_name": "信息",
+            "img_name": "Mms",
+            "target_url": "https://chain.lanzoui.com/b00nl2o2d"
+        }, 
+        {
+            "app_name": "系统分身",
+            "img_name": "SystemClone",
+            "target_url": "https://chain.lanzoui.com/b00on299i"
+        }, 
+        {
+            "app_name": "系统消息",
+            "img_name": "MCS",
+            "target_url": "https://chain.lanzoui.com/b00o854xa"
+        }, 
+        {
+            "app_name": "系统桌面",
+            "img_name": "OplusLauncher",
+            "target_url": "https://chain.lanzoui.com/b00oeq7ob"
+        }, 
+        {
+            "app_name": "悬浮球",
+            "img_name": "FloatAssistant",
+            "target_url": "https://www.lanzoui.com/b00nvyu9i"
+        }, 
+        {
+            "app_name": "讯飞输入法定制版",
+            "img_name": "IFlyIME",
+            "target_url": "https://chain.lanzoui.com/b00nl2ocd"
+        }, 
+        {
+            "app_name": "移动服务",
+            "img_name": "MSPService",
+            "target_url": "https://chain.lanzoui.com/b00oh3yed"
+        }, 
+        {
+            "app_name": "一键锁屏",
+            "img_name": "OneKeyLockscreen",
+            "target_url": "https://www.lanzoui.com/b00nuk7of"
+        }, 
+        {
+            "app_name": "应用使用时间",
+            "img_name": "DigitalWellBeing",
+            "target_url": "https://chain.lanzoui.com/b00ns2s9g"
+        }, 
+        {
+            "app_name": "音乐",
+            "img_name": "Music",
+            "target_url": "https://chain.lanzoui.com/b00nl2x1g"
+        }, 
+        {
+            "app_name": "音乐派对",
+            "img_name": "MusicLink",
+            "target_url": "https://www.lanzoui.com/b00ntfnij"
+        }, 
+        {
+            "app_name": "邮件",
+            "img_name": "Email",
+            "target_url": "https://chain.lanzoui.com/b00nl2ofg"
+        }, 
+        {
+            "app_name": "游戏空间 & 应用增强服务 & 游戏助手",
+            "img_name": "GameSpaceUI",
+            "target_url": "https://chain.lanzoui.com/b00nl9sqd"
+        }, 
+        {
+            "app_name": "游戏中心",
+            "img_name": "Gamecenter",
+            "target_url": "https://chain.lanzoui.com/b00nl2o1c"
+        }, 
+        {
+            "app_name": "远程守护",
+            "img_name": "FamilyGuard",
+            "target_url": "https://chain.lanzoui.com/b00no904b"
+        }, 
+        {
+            "app_name": "阅读",
+            "img_name": "",
+            "target_url": "https://www.lanzoui.com/b00ntfm3i"
+        }, 
+        {
+            "app_name": "云服务",
+            "img_name": "CloudService",
+            "target_url": "https://chain.lanzoui.com/b00nl2nkf"
+        }, 
+        {
+            "app_name": "语音翻译",
+            "img_name": "OppoTranslation",
+            "target_url": "https://www.lanzoui.com/b00nukpla"
+        }, 
+        {
+            "app_name": "支付保护",
+            "img_name": "SecurityPay",
+            "target_url": "https://chain.lanzoui.com/b00ouvoch"
+        }, 
+        {
+            "app_name": "指南针",
+            "img_name": "OppoCompass2",
+            "target_url": "https://chain.lanzoui.com/b00nl2nyj"
+        }, 
+        {
+            "app_name": "智能侧边栏",
+            "img_name": "SmartSideBar",
+            "target_url": "https://chain.lanzoui.com/b00oaceef"
+        }, 
+        {
+            "app_name": "智能家居",
+            "img_name": "",
+            "target_url": "https://chain.lanzoui.com/b00nl2nhc"
+        }, 
+        {
+            "app_name": "专注模式",
+            "img_name": "FocusMode",
+            "target_url": "https://chain.lanzoui.com/b00oin55g"
+        }, 
+        {
+            "app_name": "主题商店",
+            "img_name": "KeKeThemeSpace",
+            "target_url": "https://chain.lanzoui.com/b00nl2ndi"
+        }, 
+        {
+            "app_name": "字幕拼接",
+            "img_name": "MovieShot",
+            "target_url": "https://chain.lanzoui.com/b00ol0t1g"
+        }, 
+        {
+            "app_name": "自由收藏",
+            "img_name": "ColorFavorite",
+            "target_url": "https://www.lanzoui.com/b00ntfmza"
+        }
+    ]
+}
