@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title></title>
+    <link rel="stylesheet"
+        href="https://component-ota-afs.coloros.com/component-ota/21/08/31/6361c54a9e894a11977ed78432eb9a49.css">
+    <link rel="stylesheet"
+        href="https://component-ota-afs.coloros.com/component-ota/21/04/29/0f5413e63e6546399ccc70ef1cb15b52.css">
+    <script>
+        (function (e, t) {
+            var i = document, n = window;
+            var l = i.documentElement;
+            var r, a;
+            var d, o = document.createElement("style");
+            var s;
+            function m() {
+                var i = l.getBoundingClientRect().width;
+                if (!t) {
+                    t = 540
+                }
+                if (i > t) {
+                    i = t
+                }
+                var n = i * 100 / e;
+                o.innerHTML = "html{font-size:" + n + "px;}"
+            }
+            r = i.querySelector('meta[name="viewport"]');
+            a = "width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no,viewport-fit=cover";
+            if (r) {
+                r.setAttribute("content", a)
+            } else {
+                r = i.createElement("meta");
+                r.setAttribute("name", "viewport");
+                r.setAttribute("content", a);
+                if (l.firstElementChild) {
+                    l.firstElementChild.appendChild(r)
+                } else {
+                    var c = i.createElement("div");
+                    c.appendChild(r);
+                    i.write(c.innerHTML);
+                    c = null
+                }
+            }
+            m();
+            if (l.firstElementChild) {
+                l.firstElementChild.appendChild(o)
+            } else {
+                var c = i.createElement("div");
+                c.appendChild(o);
+                i.write(c.innerHTML);
+                c = null
+            }
+            n.addEventListener("resize", function () {
+                clearTimeout(s);
+                s = setTimeout(m, 300)
+            }, false);
+            n.addEventListener("pageshow", function (e) {
+                if (e.persisted) {
+                    clearTimeout(s);
+                    s = setTimeout(m, 300)
+                }
+            }, false);
+            if (i.readyState === "complete") {
+                i.body.style.fontSize = "16px"
+            } else {
+                i.addEventListener("DOMContentLoaded", function (e) {
+                    i.body.style.fontSize = "16px"
+                }, false)
+            }
+        })(1080, 1080);
+    </script>
+    <!--<script src="https://static-common.heytapdownload.com/night_3_0.js"></script>-->
+    <script
+        src="https://component-ota-afs.coloros.com/component-ota/21/08/31/a65d89cdde074009a4d0cdf9d77c77bb.js"></script>
+</head>
+
+<body>
+    <div id="black">
+        <div class="logo" id="logoDiv"></div>
+        <div class="title plr72">
+            <h1>ColorOS <span id="osVersion">3.0 Pro</span>&nbsp;<span id="shu">|</span>&nbsp;Android 6.0</h1>
+            <h2>正式版&nbsp;&nbsp;&nbsp;&nbsp;<span id="size">已是最新版本</span>&nbsp;&nbsp;&nbsp;&nbsp;2022.02.12 </h2>
+            <h3>R9tm_11_G.05</h3>
+        </div>
+        <div class="video nonetwork" id="nonetwork">
+            <img src="https://component-ota-afs.coloros.com/component-ota/21/08/31/f9bd23164e084ca599be39628377e339.png"
+                alt="">
+        </div>
+        <div class="pt ht-night-exclude-node"></div>
+        <div class="bg plr72">
+            <div class="big-title">版本特性</div>
+            <p>欢迎体验ColorOS Pro，本次版本为最后一次更新，并带来了一些细节上的优化，敬请浏览更新日志</p>
+            <div class="small-title">关于</div>
+            <div class="con">
+                <dl>
+                    <dt>注意事项</dt>
+                    <dd>1.该版本建议双清刷入
+                        2.若有问题、bug或建议，可将意见反馈给作者（反馈入口：设置->关于系统->意见反馈）</dd>
+                    <dt>作者在哪些平台？</dt>
+                    <dd>1.酷安：Col_or
+                        2.微信公众号：KarAWM乱七八糟的ROM更新
+                        3.QQ 群：787729284</dd>
+                </dl>
+            </div>
+            <div class="small-title">更新日志</div>
+            <div class="con">
+                <dl>
+                    <dt>日历</dt>
+                    <dd>[优化] 部分界面的显示效果</dd>
+                    <dt>通信</dt>
+                    <dd>[优化] 更新号码归属地数据
+                        [优化] 热插拔SIM 卡时，不强行要求重启手机</dd>
+                    <dt>备份与恢复</dt>
+                    <dd>[优化] 全新UI设计
+                        [优化] 备份与恢复的入口迁移至“设置→其他设置→备份与恢复”</dd>
+                    <dt>联系人、拨号</dt>
+                    <dd>[优化] 拨号界面的视觉风格</dd>
+                    <dt>文件管理</dt>
+                    <dd>[新增] 首页“QQ”板块支持新版本QQ的路径的扫描
+                        [优化] 对视觉风格进行优化</dd>
+                    <dt>桌面</dt>
+                    <dd>[新增] 桌面4x6显示布局
+                        [新增] 桌面默认布局调整为4x6布局
+                        [优化] 桌面图标大小</dd>
+                    <dt>字体</dt>
+                    <dd>[新增] OPPO Sans默认字体，整体简洁优雅，富有科技美感</dd>
+                    <dt>系统 UI</dt>
+                    <dd>[优化] 全新的状态栏风格，显示更美观
+                        [优化] 重新绘制电池图标
+                        [优化] 状态栏高度、左右间距及视觉效果
+                        [优化] 通知中心的显示效果
+                        [优化] 横幅通知的显示效果
+                        [优化] 音量弹窗的显示效果
+                        [优化] 锁屏通知的显示效果
+                        [优化] 锁屏状态时，状态栏的布局效果
+                        [优化] 控制中心的显示效果
+                        [优化] 触发VOOC闪充时，锁屏充电动画百分比的字体显示更改为OPPO Sans
+                        [优化] 取消按键截屏的延迟，截屏更快更方便
+                        [优化] 近期任务界面的视觉效果</dd>
+                    <dt>设置</dt>
+                    <dd>[新增] 支持设置默认桌面
+                        [优化] 默认自动息屏时间调整为1分钟
+                        [优化] “关于手机”界面的显示效果
+                        [优化] 去除进入“开发者选项”和“辅助功能”设置的安全验证
+                        [优化] 取消USB 调试在10分钟后未使用自动关闭功能的设计
+                        [优化] 取消OTG功能在10分钟后未使用自动关闭功能的设计</dd>
+                    <dt>关于系统/系统应用管理/软件更新/关于手机</dt>
+                    <dd>[新增] 仿ColorOS 11关于手机
+                        [新增] 全新软件更新界面
+                        [优化] 应用重写，优化使用体验
+                        [优化] 关于系统，QQ群、玩机补丁界面数据采用在线加载模式</dd>
+                    <dt>应用包安装程序</dt>
+                    <dd>[优化] 全新UI界面，优化使用体验
+                        [优化] 检测到未知来源时，不再进行安全验证
+                    </dd>
+                    <dt>主题</dt>
+                    <dd>[新增] 默认主题使用ColorOS 11默认壁纸
+                        [新增] 默认主题使用ColorOS 12默认桌面图标
+                        [优化] 更新百变引擎</dd>
+                    <dt>系统</dt>
+                    <dd>[新增] 内置Magisk 24.1
+                        [新增] 无边界设计全新升级，视觉更震撼，操作更高效，体验更自然
+                        [优化] 升级系统软件，提供更加稳定的体验
+                        [优化] 调整长按电源键进入重启菜单的时间
+                        [优化] 升级WebView版本，提升上网性能与稳定性</dd>
+                </dl>
+            </div>
+            <div class="note">
+                <h4>注意事项</h4>
+                <ul>
+                    <li>1. 为降低版本升级风险，建议升级前备份个人数据。</li>
+                    <li>2. 软件升级过程中，手机温度可能短暂的小幅升高，完成升级后会迅速恢复正常，属于正常现象。</li>
+                </ul>
+            </div>
+            <div id="operator"></div>
+        </div>
+    </div>
+    <script
+        src="https://component-ota-afs.coloros.com/component-ota/21/08/31/458bea068d4a45fcb87b74f096b9882e.js"></script>
+    <script
+        src="https://component-ota-afs.coloros.com/component-ota/21/08/31/7235976fc3cc48f4a6e7f5d854668ba7.js"></script>
+    <script type="text/javascript">
+        var language = "zh-CN";
+        var isFirst = true;
+        var query = {};
+        var search = window.location.search.split("?")[1];
+        if (search) {
+            search = search.split("&");
+            search.forEach(function (s) {
+                var key = s.split("=")[0];
+                var value = s.split("=")[1];
+                query[key] = value;
+            });
+        } window.onload = function () {
+            if (query.fontType !== 'opposans') {
+                $('body').css('font-family', 'sans-serif')
+            }
+            if (query.osVersion) {
+                $("#osVersion").text(query.osVersion)
+            }
+            if (query.size) {
+                $("#size").html(decodeURI(query.size.replace(/%20/g, "&nbsp;")))
+            }
+            if (query.darkmode === "true") {
+                document.body.style.backgroundColor = "#000000";
+                document.getElementById('black').className = 'black';
+            }
+            query.logoType === "1" ? $('#logoDiv').append('<img src="https://component-ota-afs.coloros.com/component-ota/21/08/31/6e70f14c81a247aa8e95d619c1fdc400.apng" alt="" />') : $('#logoDiv').append('<img src="https://component-ota-afs.coloros.com/component-ota/21/08/31/469ac80bff6442a88f50bbaa301b1fa0.apng" alt="" />');
+            if (query.size) {
+                var txt = decodeURIComponent(query.size);
+                $("#size").html(txt.replace(/%20/g, "&nbsp;"));
+            }
+            if (query.isShowVideo === "false") {
+                $("#video").remove();
+            } else {
+                var myPlayer = videojs('my-video', {
+                    errorDisplay: false
+                });
+                videojs("my-video").ready(function () {
+                    var myPlayer = this;
+                    myPlayer.on('error', function () {
+                        $("#video").hide();
+                        try {
+                            if (HeytapTheme && HeytapTheme.isNight()) {
+                                $("#nonetwork img").attr('img', 'https://component-ota-afs.coloros.com/component-ota/21/08/31/f9bd23164e084ca599be39628377e339.png')
+                            }
+                        } catch (error) {
+                            console.log(error, '非暗色模式')
+                        } $("#nonetwork").show();
+                    });
+                    $("#my-video").fadeIn('fast', function () {
+                        if (query.isWifi === "true") {
+                            myPlayer.play()
+                        } else {
+                            myPlayer.pause();
+                            myPlayer.on('play', function () {
+                                if (isFirst) {
+                                    app.showMsg();
+                                    isFirst = false
+                                }
+                            });
+                        }
+                    })
+                });
+                myPlayer.on("ended", function () {
+                    myPlayer.play()
+                })
+            }
+        };
+        document.getElementById("operator").innerHTML = '';
+        var lan = language.toUpperCase();
+        if (lan == 'UR-PK' || lan == 'UR' || lan == 'AR' || lan == 'AR-EG' || lan == 'AR-IL' || lan == 'FA' || lan == 'FA-IR' || lan == 'UG-CN' || lan == 'AR-AR' || lan == 'IW-IL' || lan == 'IW') {
+            document.getElementById("black").style.textAlign = 'right';
+            document.getElementById("black").setAttribute('dir', 'rtl')
+        }
+    </script>
+    <style>
+        #operator p {
+            margin: 5px 0px;
+        }
+
+        #operator p:nth-child(1) {
+            padding: 30px 0px;
+            opacity: 1 !important;
+            letter-spacing: 0.005rem !important;
+            color: rgb(0, 0, 0) !important;
+            font-size: 0.36rem !important;
+            line-height: 0.32rem !important;
+            font-weight: bolder !important;
+        }
+
+        #operator p:nth-child(6) {
+            opacity: 1 !important;
+            padding: 30px 0px;
+            letter-spacing: 0.005rem !important;
+            color: rgb(0, 0, 0) !important;
+            font-size: 0.36rem !important;
+            line-height: 0.32rem !important;
+            font-weight: 900 !important;
+        }
+
+        #operator p:nth-child(2) {
+            padding: 30px 0px;
+            opacity: 1 !important;
+            letter-spacing: 0.005rem !important;
+            color: rgb(0, 0, 0) !important;
+            font-size: 0.36rem !important;
+            line-height: 0.32rem !important;
+            font-weight: bolder !important;
+        }
+    </style>
+</body>
+
+</html>
