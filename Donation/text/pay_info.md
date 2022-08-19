@@ -1,4 +1,4 @@
-# 20220816更新
+# 20220819更新
 
 # <span style="color:red">请先确保会熟练刷机之后再考虑付费上车！！！<br>请先确保会熟练刷机之后再考虑付费上车！！！<br>请先确保会熟练刷机之后再考虑付费上车！！！</span>
 
@@ -23,7 +23,7 @@ OPPO R9s/R9sk/R9st/R9skt：200729<br>
 暂无更新<br>
 
 > **OPPO R11s/R11sPlus**<br>
-暂无更新<br>
+版本2022.5，基于ColorOS 6.0.1 | Android 9，**¥35**，长期开放，攒到一定用户量发一批，至少每2个月发一批，如2个月内净增用户量小于5，则顺延一个月<br>
 
 > **OPPO Find X（包括超级闪充版）**<br>
 版本2022.1，基于ColorOS 11 | Android 11，**¥35**，**2022年7月29日\~2022年8月25日是付费&问卷填写时间，预计在2022年8月29日前完成发包**<br>
@@ -54,7 +54,7 @@ adb shell su -c cat /sys/firmware/devicetree/base/firmware/android/serialno
 
 ## 问卷传送门
 [OPPO R9s/R9sk/R9st/R9skt](https://wj.qq.com/s2/9659012/c0b3)<br>
-[OPPO R11s/R11sPlus](https://wj.qq.com/s2/9774330/1bfc)<br>
+[OPPO R11/R11Plus/R11s/R11sPlus](https://wj.qq.com/s2/9774330/1bfc)<br>
 [OPPO Find X（含超级闪充版）](https://wj.qq.com/s2/10423371/92db)<br>
 [OPPO Find X2/Find X2 Pro](https://wj.qq.com/s2/10410669/bdfe)<br>
 [OPPO K7x、realme Q2 Pro/X7](https://wj.qq.com/s2/10573476/1951)<br>
