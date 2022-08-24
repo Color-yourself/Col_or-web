@@ -77,7 +77,7 @@ Find X2系列：929299134<br>
 「QQ 频道」<br>
 以下方式均可加入频道<b>“Col_or的玩机交流站”</b><br>
 1）在频道搜索界面处搜索<b>“Col_or的玩机交流站”</b><br>
-2）[点击此链接加入频道](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=1xLpiY&from=246610&biz=ka)<br>
+2）[点击此链接加入频道](https://pd.qq.com/s/hg1irv)<br>
 3）扫描以下二维码进入<br>
 <img src="https://color597.github.io/col_or/Donation/img/qq_channel.jpg" width="300" />
 
