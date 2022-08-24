@@ -2,6 +2,11 @@
 
 # <span style="color:red">请先确保会熟练刷机之后再考虑付费上车！！！<br>请先确保会熟练刷机之后再考虑付费上车！！！<br>请先确保会熟练刷机之后再考虑付费上车！！！</span>
 
+## 上车前注意事项
+1. 上车顺序是：阅读本内容 -> 付费 -> 复制订单号 -> 复制主板序列号 -> 填写问卷 -> 关注个人邮箱
+2. OPPO 官方深度测试要求，政企 & 运营商定制机无法参与深度测试，请这类用户不要付费
+3. 刷机流程大同小异，如有需要可加入下方提供的QQ 群、QQ 频道，或者Telegram 群组
+
 ## ColorOS Pro系列已经开启付费计划，以下机型为部分机型最新免费版本的版本号
 OPPO A33/A33m/A53/A53m/R7Plusm/R7sm/R7sPlus：200203<br>
 OPPO A37m：200408（Android 6.0）、200728（Android 5.1）<br>
@@ -73,13 +78,17 @@ OPPO K7x、realme Q2系列/X7：747975779<br>
 LG V30 ThinQ：365274511<br>
 R11/R11s系列：562069058<br>
 Find X2系列：929299134<br>
-如果没有你的型号，可以加入下面的QQ 频道。当然，上面机型的用户也可以加入QQ 频道<br>
+
+## 如果没有你的型号，可以加入下面的QQ 频道。当然，上面机型的用户也可以加入QQ 频道<br>
 「QQ 频道」<br>
 以下方式均可加入频道<b>“Col_or的玩机交流站”</b><br>
 1）在频道搜索界面处搜索<b>“Col_or的玩机交流站”</b><br>
 2）[点击此链接加入频道](https://pd.qq.com/s/hg1irv)<br>
 3）扫描以下二维码进入<br>
 <img src="https://color597.github.io/col_or/Donation/img/qq_channel.jpg" width="300" />
+
+## Telegram 群组
+[点击此链接加入Telegram 群组](https://t.me/color597_chatroom)
 
 ## 支付方式
 ### 微信支付
