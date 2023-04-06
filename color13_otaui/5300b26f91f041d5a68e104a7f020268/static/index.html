@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html style=font-size:100px>
+
+<head>
+  <meta charset=utf-8>
+  <meta http-equiv=X-UA-Compatible content="IE=edge">
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <link rel=icon href=favicon.ico>
+  <title>ota-upgrade-pages</title>
+  <style>
+    #shade {
+      display: none;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(24, 24, 24);
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 1000;
+    }
+  </style>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/chunk-0920bb32.3e5f1182.css rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/chunk-1af742b6.904d586f.css rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/chunk-1b4b1340.40faf3fb.css rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/chunk-1e66be38.cc10d45e.css rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/chunk-216e7f98.d907562c.css rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/chunk-22c0a6be.4a1c2e5b.css rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/chunk-35f1cee1.e76497c3.css rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/chunk-39bb9ce0.b77562ec.css rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/chunk-4bd6e45e.c48358c4.css rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/chunk-4c191b80.d67bb25f.css rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/chunk-5f1cec80.45673ea5.css rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-0920bb32.b5ba6515.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-11dbdd65.ed18ad56.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-1302197e.e0751ff9.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-1af742b6.6e6c3789.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-1b4b1340.03449a2b.js rel=prefetch>
+  <link href=static/js/chunk-1e66be38.138de47a.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-216e7f98.cfe7c37f.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-21f85b13.5f010bad.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-22c0a6be.874813f4.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-2d0c1282.c521ab55.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-2d0cb6c4.8be74dbc.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-2d0e661c.8f90860f.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-2d217fdc.6bcc3d85.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-35f1cee1.a4885659.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-39bb9ce0.fb744167.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-485f35e2.4616b8ef.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-4bd6e45e.166966f9.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-4c191b80.3abad9dc.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-5a957d34.043713af.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-5f1cec80.9df3f3ee.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-6a535ea4.4e96769f.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-785e8965.881d40b9.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-99585148.48f8c10b.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-c52afc94.b9c3d1b1.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-c66cbd86.d20b412a.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-de82bef6.886ddc5a.js rel=prefetch>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/app.6654fec2.css rel=preload as=style>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/chunk-vendors.108dd5ba.css rel=preload as=style>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/app.2735082c.js rel=preload as=script>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-vendors.01e41303.js rel=preload as=script>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/chunk-vendors.108dd5ba.css rel=stylesheet>
+  <link href=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/css/app.6654fec2.css rel=stylesheet>
+</head>
+
+<body><noscript><strong>We're sorry but ota-upgrade-pages doesn't work properly without JavaScript enabled. Please
+      enable it to continue.</strong></noscript>
+  <div id=app></div>
+  <div id=shade></div>
+  <script>// 暗色模式下，设置暗色遮罩
+    function getQueryParam(url, key) {
+      let urlString = decodeURIComponent(url)
+      if (urlString.indexOf('?') !== -1) {
+        let params = urlString.substr(urlString.indexOf('?') + 1).split('&')
+        for (let item of params) {
+          if (item.split('=')[0] === key) {
+            return item.split('=')[1]
+          }
+        }
+      }
+      return ''
+    }
+    const darkMode = getQueryParam(window.location, 'darkMode')
+    if (darkMode === 'true') {
+      const shade = document.querySelector('#shade')
+      shade && (shade.style.display = 'inline-block')
+    }</script>
+  <script src=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/chunk-vendors.01e41303.js></script>
+  <script src=https://h5fs.coloros.com/5300b26f91f041d5a68e104a7f020268/static/static/js/app.2735082c.js></script>
+</body>
+
+</html>
