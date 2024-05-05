@@ -1,0 +1,64 @@
+<!--
+ * @Description: 
+ * @Author: W9091256
+ * @Date: 2022-12-06 18:20:49
+ * @LastEditTime: 2023-06-28 16:57:38
+ * @LastEditors:  
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+  <title>Vite App</title>
+  <script src="js/night_3_0.js"></script>
+  <script>
+    window.onload = function () {
+      let newColorVal = 'oldHeytapTheme'
+      try {
+        if (HeytapTheme.isNight()) {
+          var configuration = JSON.parse(HeytapTheme.getDarkConfiguration())
+          // 暗色色值deep0 rgb(0,0,0) middle8 rgb(24,24,24) soft20 rgb(48,48,48)
+          // 由于客户端暗色现在基于#FAFAFA并非#FFFFFF
+          // 所以这里deep明度值改成1.6 middle明度值改成9.6 soft明度值改成21
+          const colorVal = Number(configuration.darkModeBackground)
+          switch (colorVal) {
+            case 0:
+              newColorVal = 'deep'
+              break
+            case 8:
+              newColorVal = 'middle'
+              break
+            case 20:
+              newColorVal = 'soft'
+              break
+            default:
+              break
+          }
+          document.getElementsByTagName('html')[0].classList.add(newColorVal)
+          document.body.classList.add(newColorVal)
+        }
+      } catch (e) {
+        console.log(e)
+      }
+    }
+  </script>
+  <style>
+    /* .deep,
+    .soft,
+    .middle {
+      background-color: red !important;
+    } */
+  </style>
+  <script type="module" crossorigin src="./assets/index.e1bbe599.js"></script>
+  <link rel="stylesheet" href="./assets/index.3ed27076.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  
+</body>
+
+</html>
